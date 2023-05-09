@@ -65,7 +65,8 @@ cout<<"Give number: ";
   try{
     Logarithm log(base,number);
     cout<<"Solution: "<<log.Calculate()<<endl;
-  } catch (const LogarithmException& e){
+  }
+ catch (const LogarithmException& e){
     cerr<<"Error: "<<e.what()<<endl;
   }
   return 0;
