@@ -3,25 +3,23 @@
 #include "../include/Product/Products.h"
 #include "../include/ShoppingCart/Cart.h"
 
-struct prodData{
-    int prodId;
-    string prodName;
-    float prodPrice;
-};
 
 int main() {
 
-    prodData data;
+    int prodId;
+    string prodName;
+    float prodPrice;
+    int a;
+
     vector<Products>prodList;
     Cart cart;
-    int a;
 
     fstream file;
     file.open("../include/Product/Product-list");
     int j=0;
     while(!file.eof()){
-        file>>data.prodId>>data.prodName>>data.prodPrice;
-        Products x(data.prodId,data.prodName,data.prodPrice);
+        file>>prodId>>prodName>>prodPrice;
+        Products x(prodId,prodName,prodPrice);
         prodList.push_back(x);
         j++;
     }
@@ -46,51 +44,53 @@ int main() {
         cin>>a;
         switch (a) {
             case 1:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 2:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 3:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 4:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 5:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 6:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 7:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 8:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 9:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 10:
-                cart.addItem(prodList[a-1]);
+                cart.AddItem(prodList[a - 1]);
                 cout<<"Product added to the cart"<<endl;
                 break;
             case 0:
                 break;
+            default:
+                cout<<"Given input is not supported"<<endl;
         }
     }
-    cout<<"     Your shopping cart ("<<cart.countItem()<<"):"<<endl<<endl;
-    cart.checkCart();
+    cout << "     Your shopping cart (" << cart.CountItem() << "):" << endl << endl;
+    cart.CheckCart();
     cout<<"Your total:  ";
     printf("%0.2f",cart.CalcProd());
     cout<<" PLN"<<endl;

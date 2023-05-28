@@ -33,12 +33,12 @@
 //    cout<<"10. 10276   Colosseum      2599.99 PLN"<<endl;
 //    cout<<"0. Go to checkout"<<endl;
 //
-//    fakeCart.addItem(prodList[0]);
-//    fakeCart.addItem(prodList[1]);
-//    fakeCart.addItem(prodList[2]);
+//    fakeCart.AddItem(prodList[0]);
+//    fakeCart.AddItem(prodList[1]);
+//    fakeCart.AddItem(prodList[2]);
 //
-//    cout<<"     Your shopping cart ("<<fakeCart.countItem()<<"):"<<endl<<endl;
-//    fakeCart.checkCart();
+//    cout<<"     Your shopping cart ("<<fakeCart.CountItem()<<"):"<<endl<<endl;
+//    fakeCart.CheckCart();
 //    cout<<"Your total:  ";
 //    printf("%0.2f",fakeCart.CalcProd());
 //    cout<<" PLN"<<endl;

@@ -8,10 +8,10 @@ class Fake{
     vector <Products> prodList;
 
 public:
-    void addItem(Products products);
+    void AddItem(Products products);
     float CalcProd();
-    int countItem();
-    void checkCart();
+    int CountItem();
+    void CheckCart();
 };
 
 #endif //OOP_PROJECT_FAKE_H
