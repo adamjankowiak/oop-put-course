@@ -12,6 +12,7 @@ public:
     float CalcProd();
     int CountItem();
     void CheckCart();
+    class Fake;
 };
 
 

@@ -2,13 +2,14 @@
 #ifndef OOP_PROJECT_FAKE_H
 #define OOP_PROJECT_FAKE_H
 #include "../Product/Products.h"
+#include "../ShoppingCart/Cart.h"
+
 #include <vector>
 
-class Fake{
+class Cart::Fake{
     vector <Products> prodList;
-
 public:
-    void AddItem(Products products);
+    void AddItem();
     float CalcProd();
     int CountItem();
     void CheckCart();

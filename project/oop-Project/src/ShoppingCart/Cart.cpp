@@ -20,7 +20,7 @@ int Cart::CountItem() {
 
 void Cart::CheckCart() {
     for (int i = 0; i < prodList.size(); ++i) {
-        cout<<i+1<<".  "<<prodList[i].prodId()<<"  "<<prodList[i].prodName()<<"  "<<prodList[i].prodPrice()<<endl;
+        cout<<i+1<<".  "<<prodList[i].prodId()<<"  "<<prodList[i].prodName()<<"  "<<prodList[i].prodPrice()<<" PLN"<<endl;
     }
 
 }
